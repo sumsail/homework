@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제_짭짤한맛</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .photo {
+            background-image: url('https://cdn.wadiz.kr/ft/images/green001/2018/0711/20180711002648763_19.jpg/wadiz/format/jpg/quality/80/optimize');
+            background-size: cover;
+            background-position: center;
+            width: 500px;
+            height: 400px;
+            margin: auto;
+        }
+        .wrap {
+            width :500px;
+            margin : auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        h1 , h5 {
+            display: inline;
+        }
+
+        .order {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function order() {
+            alert("주문이 완료되었습니다.")
+        }
+    </script>
+</head>
+<body>
+    <div class ="wrap">
+        <div class ="photo"></div>
+        <p class="wrap">
+        <p></p>
+        <h1>인센스 홀더 판매</h1> <h5>가격 : 3000원/개</h5>
+        <p>설명 블라블라</p>
+
+    <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3">주문자 이름</span>
+            </div>
+            <input type="text" class="form-control" id="order-name" aria-describedby="basic-addon3">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">수량</label>
+            </div>
+            <select class="custom-select" id="order-count">
+                <option selected value=""> -- 수량을 선택하세요 --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3">주소</span>
+            </div>
+            <input type="text" class="form-control" id="order-address" aria-describedby="basic-addon3">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3">전화번호</span>
+            </div>
+            <input type="text" class="form-control" id="order-phone" aria-describedby="basic-addon3">
+        </div>
+        <div class="order">
+            <button onclick="order()" type="button" class="btn btn-primary" >주문하기</button>
+        </div>
+
+
+    </div>
+</body>
+</html>
