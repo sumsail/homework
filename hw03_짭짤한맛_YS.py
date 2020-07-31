@@ -24,5 +24,4 @@ for tr in trs:
         "title": title,
         "atrist": artist
     }
-
     db.info.insert_one(data)
