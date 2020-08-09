@@ -53,7 +53,7 @@
             } else if (!isCellPhone(phone)) {
                 alert("휴대폰번호 입력 형식이 틀립니다. \n 010-0000-0000으로 입력해주세요")
                 return
-            } else {
+            }
                 $.ajax({
                     type: "POST",
                     url: "/order",
@@ -70,7 +70,7 @@
 
                     }
                 })
-            }
+
 
             // 주문하기 API를 사용해 여기를 채워주세요
         }
